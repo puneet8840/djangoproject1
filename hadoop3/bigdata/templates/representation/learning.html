@@ -1,0 +1,34 @@
+{%extends 'representation/base3.html'%}
+{%block learning%}
+<div class="container jumbotron data">
+  {%for post in post_list%}
+<center ><small><div onclick="hide()" id="hide" >hide</div>&nbsp;&nbsp;<div id="unhide" onclick="unhide()" >unhide</div></small> {%include 'representation/pagination1.html' with image=image%} <small>swipe images related to {{post.title}}</small></center>
+  {%for img in image%}
+  <div class="learning-images"><marquee behavior="slide" width="100%" scrollamount="200" height="400"><img src="{{img.image.url}}" alt="notavailable"></marquee></div>
+  {%endfor%}
+
+
+  <div class="jumbotron container typewriterl"><h1>
+  <span class="text_4">{{post.title}}</span>
+
+  </h1>
+  </div>
+
+
+
+  <div class="post-body">
+
+    <p>{{post.body}}
+    </p>
+  <center id="nextpage">  {%include 'representation/pagination2.html' with post=post_list%} <small>swipe next topic</small></center>
+  </div>
+  {%endfor%}
+
+
+
+
+</div>
+
+
+
+{%endblock%}

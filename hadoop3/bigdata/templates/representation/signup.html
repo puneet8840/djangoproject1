@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{%extends 'representation/base.html'%}
+{%block signup%}
+<form class="x" method="POST" align="center">
+
+{{form}}
+{%csrf_token%}
+<button type="submit" class='btn btn-primary btn-lg'>Register&nbsp;&nbsp;<i class="fa fa-registered" aria-hidden="true"></i>
+</button>
+
+
+</form>
+{%endblock%}

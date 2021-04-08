@@ -1,0 +1,12 @@
+<div class="img-page  ">
+<ul class="pager">
+  {%if image.has_previous%}
+  <li><a class="" href="?image={{image.previous_page_number}}"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></a></li>&nbsp;&nbsp;
+  {%endif%}
+  <span>{{image.number}} of {{image.paginator.num_pages}}&nbsp;</span>
+  {%if image.has_next%}
+  <li><a  href="?image={{image.next_page_number}}"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a></li>
+  {%endif%}
+  </ul>
+
+</div>

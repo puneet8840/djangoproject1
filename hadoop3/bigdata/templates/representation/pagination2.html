@@ -1,0 +1,11 @@
+<div class="post-page">
+
+  {%if post.has_previous%}
+  <a class="btn btn-primary btn-md" href="?page={{post.previous_page_number}}"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></a>&nbsp;&nbsp;
+  {%endif%}
+  <span>{{post.number}} of {{post.paginator.num_pages}}&nbsp;</span>
+  {%if post.has_next%}
+  <a class="btn btn-primary btn-md" href="?page={{post.next_page_number}}"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+  {%endif%}
+
+</div>

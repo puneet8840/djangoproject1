@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+{%load staticfiles%}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Presentation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="{%static 'js/js.js'%}">
+
+  </script>
+    <link rel="stylesheet" href="{%static 'css/css.css'%}">
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+
+    <nav class="navbar-inverse">
+        <div id='hdimage'>
+            <img src="https://miro.medium.com/max/2760/1*kPKoXmHBDmGthbah-0549A.png" alt="image not available">
+        </div>
+        <div class="animatedele">
+          <img src="https://www.animatedimages.org/data/media/192/animated-elephant-image-0331.gif" alt="">
+        </div>
+        <div class="time">
+          <p class='wish'></p>
+          <small></small>
+        </div>
+        <i class="fa fa-moon-o moon" aria-hidden="true"></i>
+        <div id="logout">
+        <a class="btn btn-primary btn-sm" href="/accounts/logout/">logout!</a>
+      </div>
+        <h1 id='r'></h1>
+    </nav>
+
+{%block typewriter%}
+{%endblock%}
+{%block project%}
+{%endblock%}
+{%block learning%}
+{%endblock%}
+
+<footer class="jumbotron">
+
+<h2>What technologies we used:</h2>
+<div class="tools">
+  <div class="tool">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Apache_Hive_logo.svg/1200px-Apache_Hive_logo.svg.png" alt="not available">
+  </div>
+
+  <div class="tool">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/bc/Apache_Pig_Logo.svg/1200px-Apache_Pig_Logo.svg.png" alt="not available">
+  </div>
+
+  <div class="tool">
+
+    <img src="https://miro.medium.com/max/603/1*G86aStrodpGOsxauvcqP5w.png" alt="not available">
+  </div>
+
+  <div class="tool">
+
+    <img src="https://i.pinimg.com/originals/e5/27/a8/e527a8d55df7b2345fe57fdf7bfa8e73.png" alt="not available">
+  </div>
+
+  <div class="tool">
+    <img src="https://bigdatapath.files.wordpress.com/2019/03/3.png" alt="">
+
+  </div>
+
+  <div class="tool">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/81/Apache_ZooKeeper_Logo.svg/1200px-Apache_ZooKeeper_Logo.svg.png" alt="">
+
+  </div>
+
+  <div class="tool">
+    <img src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_00248fffc9b6ccae570104929aed4bf7/cloudera.png" alt="">
+
+  </div>
+
+  <div class="tool" >
+    <img src="https://intellipaat.com/mediaFiles/2015/07/hadoop-hdfs.png" alt="">
+
+  </div>
+
+</div>
+
+</footer>
+
+
+</body>
+
+</html>

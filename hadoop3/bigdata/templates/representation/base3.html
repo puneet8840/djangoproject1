@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+{%load staticfiles%}
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <title>Presentation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
+
+  <!-- fonts -->
+  <script type="text/javascript" src="{%static 'js/js.js'%}"></script>
+  <!-- css -->
+    <link rel="stylesheet" href="{%static 'css/css.css'%}">
+  <!-- css -->
+
+
+
+
+</head>
+
+<body onscroll="scroll()">
+
+
+
+
+
+    <nav class="navbar-inverse">
+        <div id='hdimage'>
+            <img src="https://miro.medium.com/max/2760/1*kPKoXmHBDmGthbah-0549A.png" alt="image not available">
+        </div>
+        <div class="animatedele">
+          <img src="https://www.animatedimages.org/data/media/192/animated-elephant-image-0331.gif" alt="">
+        </div>
+        <div class="time">
+
+
+          <p class='wish'></p>
+
+          <small></small>
+        </div>
+        <i class="fa fa-moon-o moon" aria-hidden="true"></i>
+        <div id="logout">
+        <a class="btn btn-primary btn-sm" href="/accounts/logout/">logout!</a>
+      </div>
+        <h1 id='r'></h1>
+    </nav>
+
+{%block typewriter%}
+{%endblock%}
+{%block project%}
+{%endblock%}
+{%block learning%}
+{%endblock%}
+<div  onclick="scrollin()" class="top"><a href="#top" class="btn btn-lg btn-primary"><i class="fa fa-arrow-up" aria-hidden="true"></i></a></div>
+
+
+
+
+</body>
+
+</html>
